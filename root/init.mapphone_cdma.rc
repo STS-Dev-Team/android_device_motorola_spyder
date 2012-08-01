@@ -80,7 +80,6 @@ on fs
 on post-fs
 # Enable PVR modules
     insmod /system/lib/modules/pvrsrvkm_sgx540_120.ko
-    insmod /system/lib/modules/omaplfb_sgx540_120.ko
 
     chown system system /pds
     chmod 0775 /pds
@@ -972,11 +971,11 @@ service gadget-qbp-diag /system/bin/tty2ttyd persist.ril.diag.ttydevice /dev/tty
     group radio
     disabled
 # auEmail provisioning daemon
-#service aepls001 /system/bin/aepls001
-#    class main
-#    socket aepls001 stream 0666 system system
-#    user nobody
-#    group nobody
+service aepls001 /system/bin/aepls001
+    class main
+    socket aepls001 stream 0666 system system
+    user nobody
+    group nobody
 on property:ro.bootmode=bp-tools
     start tcmd
     start gadget-qbp-modem
