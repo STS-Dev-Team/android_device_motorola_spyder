@@ -524,6 +524,12 @@ on boot
     setprop net.tcp.buffersize.4ghotspot 262144,524288,1048576,524288,1048576,2097152
 # Network Bandwidth control for netd
     setprop persist.bandwidth.enable 1
+
+# Setup trace files
+    mkdir /data/trace 0777 root root
+    chown root root /data/trace
+    chmod 0777 /data/trace
+
 # Start services
     exec /system/bin/mot_boot_mode
 # Set core max size (2G)
@@ -842,7 +848,7 @@ service baseimage /system/bin/dspexec -v -T /system/lib/dsp/baseimage.dof
     group media graphics
     oneshot
 service pvrsrv /system/vendor/bin/pvrsrvinit
-    class main
+    class core
     user root
     oneshot
 service bugtogo /system/bin/bugtogo.sh
