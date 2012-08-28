@@ -32,11 +32,11 @@ PRODUCT_COPY_FILES += \
 # Hardware HALs
 PRODUCT_PACKAGES += \
     camera.omap4 \
-    libinvensense_mpl \
+    libinvensense_mpl
 
 PRODUCT_PACKAGES += \
     libaudioutils \
-    libaudiohw_legacy \
+    libaudiohw_legacy
 
 # BlueZ test tools
 PRODUCT_PACKAGES += \
@@ -85,19 +85,13 @@ PRODUCT_PACKAGES += \
     camera_test \
     Superuser \
     su \
-    DockAudio \
+    DockAudio
 
 PRODUCT_PACKAGES += \
-    librs_jni \
     com.android.future.usb.accessory \
     FileManager \
     MusicFX \
-    Apollo \
-
-# WirelessTether
-PRODUCT_PACKAGES += wifi_tether_v3_2-beta1
-PRODUCT_COPY_FILES += \
-    $(DEVICE_FOLDER)/prebuilt/lib/libwtnativetask.so:system/lib/libwtnativetask.so \
+    Apollo
 
 # Rootfs files
 PRODUCT_COPY_FILES += \
