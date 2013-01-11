@@ -56,6 +56,11 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_FOLDER)/prebuilt/etc/audio_policy.conf:system/etc/audio_policy.conf \
     $(DEVICE_FOLDER)/prebuilt/etc/vold.fstab:system/etc/vold.fstab
 
+LOCAL_KERNEL := device/motorola/spyder/kernel
+
+PRODUCT_COPY_FILES := \
+        $(LOCAL_KERNEL):kernel
+
 # copy all kernel modules under the "modules" directory to system/lib/modules
 ifneq ($(BOARD_USES_KEXEC),true)
 PRODUCT_COPY_FILES += $(shell \

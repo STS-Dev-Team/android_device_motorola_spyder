@@ -27,5 +27,9 @@ include $(CLEAR_VARS)
 #$(file) : $(LOCAL_PATH)/recovery/postrecoveryboot.sh | $(ACP)
 #	$(transform-prebuilt-to-target)
 
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+TARGET_PREBUILT_KERNEL := device/motorola/spyder/kernel
+endif
+
 # include the non-open-source counterpart to this file
 -include vendor/motorola/spyder/AndroidBoardVendor.mk
