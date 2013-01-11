@@ -4,6 +4,8 @@
 # inherit from the proprietary version
 -include vendor/motorola/spyder/BoardConfigVendor.mk
 
+COMMON_GLOBAL_CFLAGS += -DMR0_AUDIO_BLOB
+
 # Processor
 TARGET_BOOTLOADER_BOARD_NAME := spyder
 
@@ -24,12 +26,3 @@ else
 #TARGET_KERNEL_SOURCE := kernel/motorola/omap4_xt912
 #TARGET_KERNEL_CONFIG := mapphone_defconfig
 endif
-
-# gps
-BOARD_VENDOR_TI_GPS_HARDWARE := omap4
-BOARD_GPS_LIBRARIES := libgps
-
-# adb has root
-ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
-ADDITIONAL_DEFAULT_PROPERTIES += ro.allow.mock.location=1
-
