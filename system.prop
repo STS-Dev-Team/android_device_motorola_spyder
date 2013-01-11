@@ -59,9 +59,6 @@ ro.cdma.nbpcd=1
 persist.mot.usb.mediasync = 1
 # persist.usb.android_config = 1
 
-# System property for Security Middleware Component
-ro.service.start.smc=1
-
 #Proximity sensor debounce time
 mot.proximity.delay=450
 # disable touch below 60 pixels
@@ -148,8 +145,6 @@ ro.com.google.clientidbase.ms=android-verizon
 ro.com.google.clientidbase.am=android-verizon
 ro.com.google.clientidbase.gmm=android-motorola
 ro.com.google.clientidbase.yt=android-verizon
-ro.kernel.android.ril=yes
-persist.ril.mux.noofchannels=10
 persist.ril.mux.ttydevice=/dev/ttyO0
 persist.ril.modem.ttydevice=/dev/usb/tty2-1:1.4
 persist.ril.tcmd.ttydevice=/dev/usb/tty2-1:1.3
@@ -183,31 +178,6 @@ ro.gsm.2nd_data_retry_config=max_retries=infinite,default_randomization=2000,0,0
 ro.mot.setuptype=2
 ro.horizontalIM=true
 ro.ril.svlte1x=true
-ro.media.camcorder.1080p=mp4,h264,30,15000000,aac,128000,44100,2
-ro.media.camcorder.720p=mp4,h264,30,10000000,aac,128000,44100,2
-ro.media.camcorder.d1NTSC=mp4,h264,30,6000000,aac,128000,44100,2
-ro.media.camcorder.vga=mp4,h264,30,4000000,aac,128000,44100,2
-ro.media.camcorder.cif=mp4,h264,30,1500000,aac,128000,44100,2
-ro.media.camcorder.qvga=mp4,h264,15,500000,aac,64000,44100,2
-ro.media.camcorder.mms=3gp,h264,15,128000,amrnb,12200,8000,1
-ro.media.camcorder.mmsres=qvga
-ro.camcorder.zoom=true
-ro.media.capture.maxres=5m
-ro.media.capture.fast.fps=4
-ro.media.capture.slow.fps=120
-ro.media.capture.flash=led
-ro.media.capture.flashMinV=3300000
-ro.media.capture.torchIntensity=40
-ro.media.capture.flashIntensity=100
-ro.media.capture.classification=classF
-ro.media.panorama.defres=3264x1840
-ro.media.panorama.frameres=1280x720
-keyguard.no_require_sim=true
-ro.media.enc.aud.fileformat=qcp
-ro.media.enc.aud.codec=qcelp
-ro.media.enc.aud.bps=13300
-ro.media.enc.aud.ch=1
-ro.media.enc.aud.hz=8000
 ro.mot.lte_on_cdma=1
 ro.mot.tmp.telephony.refactor=true
 ro.mot.dpmext=true
@@ -215,7 +185,6 @@ ro.com.google.clientid=android-motorola
 ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
 ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
 ro.mot.hidden_keyboards=evfwd
-drm.service.enabled=true
 
 # Additions
 ril.subscription.types=NV,RUIM
