@@ -4,8 +4,6 @@
 # inherit from the proprietary version
 -include vendor/motorola/spyder/BoardConfigVendor.mk
 
-COMMON_GLOBAL_CFLAGS += -DMR0_AUDIO_BLOB
-
 # Processor
 TARGET_BOOTLOADER_BOARD_NAME := spyder
 
