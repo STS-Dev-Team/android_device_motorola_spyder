@@ -17,7 +17,6 @@ ro.modem_available=0
 # Default network type.
 # 7 => GLOBAL.
 ro.telephony.default_network=10
-ro.com.google.clientid=android-motorola
 ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
 ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
 ro.cdma.home.operator.numeric=310004
@@ -29,10 +28,6 @@ ro.mot.hw.uaprof=http://uaprof.vtext.com/mot/xt912/xt912.xml
 
 # Enable HAC to also display Call Setting Menu Option.
 ro.mot.hw.HAC=1
-# Motorola, a19622, 12/28/2009, IKSHADOW-204 / Location Settings for android
-# Property to set enabling state of the location privacy setting feature.
-# Motorola, a19622, 03/16/2010, IKSHADOW-2141 / Disable feature 33067
-#ro.mot.settings.locprivacy=1
 # ERI feature
 # 0 OFF
 # 1 ON
@@ -52,10 +47,6 @@ persist.mot.proximity.touch=1
 ro.cdma.nbpcd=1
 # END IKSHADOW-702
 
-# BEGIN Motorola, a22976, 12-Mar-2010, IKSHADOW-1784, Power Up Tone
-# Motorola, a22976, 12-Apr-2010, IKSHADOW-3298, Remove temporary power up tone
-# persist.mot.powerup.tone=/system/media/bootup.ogg
-# END IKSHADOW-1784
 persist.mot.usb.mediasync = 1
 # persist.usb.android_config = 1
 
