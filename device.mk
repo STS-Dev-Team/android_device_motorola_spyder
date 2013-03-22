@@ -32,6 +32,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_FOLDER)/media_profiles.xml:system/etc/media_profiles.xml \
     $(DEVICE_FOLDER)/vold.fstab:system/etc/vold.fstab
 
+# Add ubuntu conf
+PRODUCT_COPY_FILES += \
+    $(DEVICE_FOLDER)/spyder.conf:system/etc/ubuntu-session.d/spyder.conf
+
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 $(call inherit-product-if-exists, vendor/motorola/spyder/spyder-vendor.mk)
 $(call inherit-product-if-exists, vendor/motorola/spyder/spyder-vendor-stock-ducati.mk)
